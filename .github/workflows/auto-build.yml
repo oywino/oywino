@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Debug (list repo root)
+        run: |
+          pwd
+          ls -la
 
       - name: Get latest OpenClaw release tag
         id: ver
