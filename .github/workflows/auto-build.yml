@@ -31,8 +31,8 @@ jobs:
 
       - uses: docker/build-push-action@v6
         with:
-          context: ./DockerCLI
-          file: ./DockerCLI/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           build-args: |
             OPENCLAW_TAG=${{ steps.ver.outputs.tag }}
